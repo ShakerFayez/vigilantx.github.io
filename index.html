@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<title>Weapon Detection Using AI</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="fontAwesome/css/all.min.css">
+<style>
+  body {font-family: sans-serif}
+  .mySlides {display: none}
+</style>
+<body>
+  <!-- Navbar -->
+  <div class="w3-top">
+    <div class="w3-bar w3-black w3-card">
+      <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+      <a href="#home" class="w3-bar-item w3-button w3-padding-large">
+        <i class="fa fa-home w3-large"></i>
+        &nbsp;&nbsp;<span>HOME</span>
+      </a>
+      <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hide-small">
+        <i class="fa fa-eye w3-large"></i>
+        &nbsp;&nbsp;<span>PHOTOS</span>
+      </a>
+      <a href="#download" class="w3-bar-item w3-button w3-padding-large w3-hide-small">
+        <i class="fa fa-download w3-large"></i>
+        &nbsp;&nbsp;<span>DOWNLOAD</span>
+      </a>
+      <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hide-small">
+        <i class="fa fa-user w3-large"></i>
+        &nbsp;&nbsp;<span>ABOUT</span>
+      </a>
+      <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">
+        <i class="fa fa-envelope w3-large"></i>
+        &nbsp;&nbsp;<span>CONTACT</span>
+      </a>
+      <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+    </div>
+  </div>
+
+  <!-- The Home Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px;" id="home">
+    <h2 class="w3-wide" style="font-weight:bold;">WEAPON DETECTON AND ALERT SYSTEM <span style="font-weight:bold; color:darkred;">USING AI</span></h2>
+    <p class="w3-opacity"><i>Brief...</i>&nbsp;&nbsp;<i class="fa fa-list-alt" style="font-size:20px;color:black"></i></p>
+    <p class="w3-justify">The Weapon Detection and Alert System leverages cutting-edge computer vision techniques to analyze live video streams or images. When a weapon—such as a firearm or knife—is detected within the camera’s field of view, the system triggers an immediate alert. These alerts can be sent to security personnel, law enforcement, or other relevant parties via notifications, emails, or alarms. By proactively identifying potential threats, this software enhances safety in public spaces, critical infrastructure, and high-risk environments. Its real-time capabilities make it a valuable tool for preventing incidents and ensuring rapid responses.
+    </p>
+    <div class="w3-row w3-padding-32" style="font-weight: bold;">
+      <div class="w3-third">
+        <p>Frame Selection</p>
+        <img src="assets/img1.jpg" class="w3-round w3-margin-bottom" alt="Frame Selection" style="width:60%">
+      </div>
+      <div class="w3-third">
+        <p>Weapon Detection</p>
+        <img src="assets/img2.jpg" class="w3-round w3-margin-bottom" alt="Weapon Detection" style="width:60%">
+      </div>
+      <div class="w3-third">
+        <p>Recognition And Alert</p>
+        <img src="assets/img3.jpg" class="w3-round" alt="Recognition And Alert" style="width:60%">
+      </div>
+    </div>
+  </div>
+
+  <!-- The Photo Section -->
+  <div class="w3-black" id="photos">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+      <h2 class="w3-wide w3-center" style="font-weight: bold;">PHOTOS</h2>
+      <p class="w3-opacity w3-center"><i>Remember to Rate our Project</i>&nbsp;&nbsp;<i class="fa-solid fa-star" style="color: #ffd700;"></i></p><br>
+      
+      <div class="w3-content w3-section" style="max-width:800px;">
+        <img class="mySlides" src="assets/p1.png" style="width:100%; border-radius: 10px;">
+        <img class="mySlides" src="assets/p2.png" style="width:100%; border-radius: 10px;">
+        <img class="mySlides" src="assets/p3.png" style="width:100%; border-radius: 10px;">
+      </div>
+      
+      <!-- Script for changing the image in the slideshow automatically -->
+      <script>
+      var myIndex = 0;
+      carousel();
+      
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";  
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}    
+        x[myIndex-1].style.display = "block";  
+        setTimeout(carousel, 2000); // Change image every 2 seconds
+      }
+      </script>
+    </div>
+  </div>
+
+  <!-- The DOWNLOAD Section -->
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="download">
+    <h2 class="w3-wide w3-center" style="font-weight: bold;">DOWNLOAD</h2>
+    <p class="w3-opacity w3-center"><i>Download Project, Source code and Documentation</i></p>
+    <button class="w3-button w3-light-grey w3-padding-large w3-section" style="margin-right: 220px;">
+      <i class="fa fa-download"></i> Download & Source Code
+    </button>
+
+    <button class="w3-button w3-light-grey w3-padding-large w3-section">
+      <i class="fa fa-download"></i> Downlaod Project Documentation
+    </button>
+
+  </div>
+
+  <!-- The About Section -->
+  <div class="w3-black" id="about">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+      <h2 class="w3-wide w3-center" style="font-weight: bold;">ABOUT</h2>
+      <p class="w3-opacity w3-center"><i>Teamwork</i>&nbsp;&nbsp;<i class="fa-solid fa-users" style="color: white;"></i></p><br>
+      <p class="w3-justify">We developed an AI-based waepon detection system, uniting our skills and passion to
+        enhance safety. Through collaboration and innovation, We've overcome challenges, forging a path toward a safer
+        future. Join us in showcasing our achievement and commitment to societal well-being.
+      </p>
+      <br>
+      <!-- First Photo Grid-->
+      <div class="w3-row-padding" style="font-size: 11px;">
+        <div class="w3-third w3-container w3-margin-bottom">
+          <img src="team imgs/5.jpg" alt="Donia" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>Donia Hamed</b> (UI Designer)</p>
+            <p>Donia Sakr is the UI/UX designer, tasked with creating an intuitive and user-friendly interface for the system. She works on designing the visual aspects and user interactions, ensuring a seamless and engaging user experience.
+            </p>
+            <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+          </div>
+        </div>
+        <div class="w3-third w3-container w3-margin-bottom">
+          <img src="team imgs/6.jpg" alt="Alaa" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>Alaa Samir</b> (Backend Developer)</p>
+            <p>Alaa Samir specializes in backend development, focusing on creating robust and scalable server-side logic. He is responsible for implementing the Flask API, managing database interactions, and ensuring the overall performance and security of the backend infrastructure.
+            </p>
+            <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+          </div>
+        </div>
+        <div class="w3-third w3-container">
+          <img src="team imgs/2.jpg" alt="Eslam" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>Eslam Ahmed</b> (BA)</p>
+            <p>Eslam Ahmed handles the financial planning and management for the project. His role includes budgeting, cost analysis, and ensuring that the project remains financially sustainable and profitable.
+
+            </p>
+            <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Second Photo Grid-->
+      <div class="w3-row-padding" style="font-size: 11px;">
+        <div class="w3-third w3-container w3-margin-bottom">
+          <img src="team imgs/7.jpg" alt="Ahmed" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>Ahmed Yousri</b> (BA)</p>
+            <p>Ahmed Sharkawy focuses on the business aspects of the project. He conducts market research, identifies potential stakeholders, and develops business strategies to ensure the project's commercial viability and alignment with market needs.
+
+            </p>
+            <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+          </div>
+        </div>
+        <div class="w3-third w3-container w3-margin-bottom">
+          <img src="team imgs/10.jpg" alt="Nour" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>Nour Sherif</b> (BA)</p>
+            <p>Nour Sherif is responsible for business development and marketing. She works alongside Ahmed Sharkawy to promote the project, engage with potential clients, and identify opportunities for partnerships and collaborations.
+            </p>
+            <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+          </div>
+        </div>
+        <div class="w3-third w3-container">
+          <img src="team imgs/8.jpg" alt="Hassan" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>Hassan Ahmed</b> (Frontend Developer)</p>
+            <p> Hassan Ahmed is responsible for the frontend development of the project. He works closely with Donia Sakr to translate UI/UX designs into functional web interfaces, ensuring responsiveness and usability across different devices and platforms.
+            </p>
+            <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Third Photo Grid-->
+      <div class="w3-row-padding" style="font-size: 11px;">
+        <div class="w3-third w3-container w3-margin-bottom">
+          <img src="team imgs/1.jpg" alt="Mohamed" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>Mohamed Raafat</b> (DS)</p>
+            <p>Mohamed Raafat is an expert in machine learning, focusing on developing and training the AI models for weapon detection. He ensures that the models are accurate, efficient, and capable of real-time performance.
+            </p>
+            <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+          </div>
+        </div>
+        <div class="w3-third w3-container w3-margin-bottom">
+          <img src="team imgs/3.jpg" alt="Shaker" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>Shaker Fayez</b> (DS)</p>
+            <p>Shaker Fayez works alongside Mohammed Raafat in the machine learning team. He is responsible for data collection, preprocessing, and continuous improvement of the AI models to enhance detection accuracy and reduce false positives.</p>
+            <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+          </div>
+        </div>
+        <div class="w3-third w3-container">
+          <img src="team imgs/4.jpg" alt="Yehya" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>Yehya Hassan</b> (Backend Developer)</p>
+            <p> Yahia Hassan is the project lead and full stack developer. He is responsible for overseeing the entire project, ensuring that all components are well-integrated and meet the project's goals. His expertise in both front-end and back-end development allows him to bridge the gap between different parts of the system.
+            </p>
+            <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- The Contact Section -->
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px;" id="contact">
+    <h2 class="w3-wide w3-center">CONTACT</h2>
+    <p class="w3-opacity w3-center"><i>Contact & Suggestions</i></p>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-col m6 w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker" style="width:30px"></i> Mansoura University<br>
+        <i class="fa fa-phone" style="width:30px"></i> Phone: +00 0015 00 0015<br>
+        <i class="fa fa-envelope" style="width:30px"> </i> Email: mail@mail.com<br>
+      </div>
+      <div class="w3-col m6">
+        <form action="/action_page.php" target="_blank">
+          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+            </div>
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+            </div>
+          </div>
+          <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+          <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="w3-black w3-center w3-padding-24">Developed by <b><span style="color: aqua;"><i>Envisioned</i></span> team for faculty of Computers and Information Science, AI department</b><a href="#home" class="w3-button w3-light-grey" style="margin-left: 10px;"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a></div>
+</body>
+</html> 
